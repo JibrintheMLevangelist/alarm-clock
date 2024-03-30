@@ -1,57 +1,36 @@
-<html>
-<head>
-<link rel="stylesheet" href="alarmstyle.css">
-<script defer src="alarm.js"></script>
-</head>
 
-<body>
-<div class="wrapper">
-<img src="Annotation 2024-03-26 052210.png">
-<h1>00:00:00 AM</h1>
-<div class="content">
-<div class="column">
-<select>
-<option value="Hour" selected hidden>Hour</option>
-<option value="01">01</option>
-<option value="02">02</option>
-<option value="03">03</option>
-<option value="04">04</option>
-<option value="05">05</option>
-<option value="06">06</option>
-<option value="07">07</option>
-<option value="08">08</option>
-<option value="09">09</option>
-<option value="10">10</option>
-<option value="11">11</option>
-<option value="12">12</option>
-</select>
-</div>
-<div class="column">
-<select>
-<option value="Minute" selected hidden>Minute</option>
-<option value="01">01</option>
-<option value="02">02</option>
-<option value="03">03</option>
-<option value="04">04</option>
-<option value="05">05</option>
-<option value="06">06</option>
-<option value="07">07</option>
-<option value="08">08</option>
-<option value="09">09</option>
-<option value="10">10</option>
-<option value="11">11</option>
-<option value="12">12</option>
-</select>
-</div>
-<div class="column">
-<select>
-<option value="AM/PM" selected hidden>AM/PM</option>
-<option value="AM">AM</option>
-<option value="PM">PM</option>
-</select>
-</div>
-</div>
-<button>Set Alarm</button>
-</div>
-</body>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="alarmstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <img src="Annotation 2024-03-26 052210.png">
+                <h1>00:00:AM</h1>
+                <div class="content">
+                    <div class="column">
+                        <select id ="hour">
+                            <option value="Hour" selected hidden>Hour</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <select id = "minute">
+                            <option value="Minute" selected hidden>Minute</option>
+                        </select>
+                    </div>
+                    <div class="column">
+					
+                        <select id="ampm">
+                            <option value="AM/PM" selected hidden>AM/PM</option>
+                        </select>
+                    </div>
+                </div>
+                 <div id="alarmTimeDisplay">Alarm Not Set</div>
+            <button>Set Alarm</button>
+            </div>
+          
+        </div>
+        <script defer src="alarm.js"></script>
+    </body>
 </html>
