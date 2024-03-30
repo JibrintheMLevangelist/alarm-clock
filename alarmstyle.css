@@ -1,9 +1,9 @@
 *
 {
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	box-sizing:border-box;
-	font-family:'Kristen ITC regular',sans-serif;
+	font-family:'Bernard MT condensed';
 }
 body, .wrapper, .content
 {
@@ -14,15 +14,33 @@ body, .wrapper, .content
 body
 {
 	min-height:100vh;
-	background:pink;
+	max-width: 50%;
+	background:#ffc2cc;
+	justify-content:center;
+	margin-left: 200px;
+}
+.container 
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 150%;
+	max-width: 1000px;
+}
+.text-wrapper
+{
+	margin-left: 40px;
+	font-size: 40px;
+	color: #ffffff;
 }
 .wrapper
 {
-	width:800px;
+	width:650px;
 	background:white;
 	border-radius:20px;
 	flex-direction:column;
 	padding: 30px 30px 38px;
+	margin-left: 250px;
 }
 .wrapper img
 {
@@ -37,6 +55,7 @@ body
 }
 .wrapper .content
 {
+	display: flex;
 	width:100%;
 	justify-content:space-between;
 }
@@ -47,13 +66,13 @@ body
 }
 .content .column
 {
-	
+	margin: auto;
 	border-radius:40px;
 	padding: 0 10px;
 	border: 1px solid white;
-	width:calc(100%/3-5px);
+	width:calc(100%/3-25px);
 }
-.colum select
+.column select
 {
 	outline:none;
 	border:none;
@@ -71,6 +90,19 @@ body
 	border-radius:5px;
 	border:none;
 	cursor:pointer;
-	background:#999;
+	background:#ffc2cc;
 }
+.wrapper button:hover
+{
+	background-color: #c466a4;
+}
+#alarmTimeDisplay
+{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 30px;
+	text-align: left;
+	margin-right: auto;
+}
+
 	
